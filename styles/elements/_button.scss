@@ -1,0 +1,38 @@
+.btn-primary {
+  @include button-variant(
+    $c-orange,
+    $c-orange,
+    $c-orange,
+    #444,
+    #333,
+    $c-orange
+  );
+  color: #fff;
+}
+
+.btn {
+  padding: 8px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .btn {
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up(md) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

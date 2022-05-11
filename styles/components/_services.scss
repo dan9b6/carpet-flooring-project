@@ -1,0 +1,26 @@
+.service {
+  &-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url("/images/home-banner.jpg");
+    margin-bottom: 25px;
+
+    &__content {
+      background-color: $c-orange-overlay;
+      margin: 0 20px;
+      padding: 10px;
+      border-radius: 5px;
+      color: $c-white;
+
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
